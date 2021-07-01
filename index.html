@@ -1,22 +1,24 @@
 <!DOCTYPE html5>
 <html>
     <head>
-        <link rel="stylesheet" href="estilo.css">
-        <link rel="icon" href="fotos/Logo_Pasteleria_MG.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/header-footer.css">
+        <link rel="icon" href="fotos/Logo_Pasteleria_MG.png">
         <title>Pastelería MG</title>
     </head>
     <body>
 
         <!--Header start-->
         <header id="header">
-                <img id="logo" src="fotos/Logo_Pasteleria_MG.png" alt="Logo Pastelería MG">
-                <navbar>
-                    <a id="Productos" href="#">Productos</a>
-                    <a id="Establecimientos" href="#">Establecimientos</a>
-                    <a id="Contacto" href="#">Contacto</a>
-                    <a id="Preguntas-Frecuentes" href="#">Preguntas Frecuentes</a>
-                </navbar>
-                <a id="Carrito" href="#"><img src="fotos/Carrito.png" alt="Carrito"></a>
+            <a href="index.html"><img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png" alt="Logo Pastelería MG"></a>
+            <navbar>
+                <a id="Productos" href="productos.html">Productos</a>
+                <a id="Establecimientos" href="establecimientos.html">Establecimientos</a>
+                <a id="Contacto" href="contacto.html">Contacto</a>
+                <a id="Preguntas-Frecuentes" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            </navbar>
+            <a id="Carrito" href="#"><img src="fotos/header-footer/Carrito.png" alt="Carrito"></a>
         </header>
         <!--Header end-->
 
@@ -31,24 +33,119 @@
         </section>
 
         <section id="liquidated-products">
-            <h2 id="liquidated-products-title">Productos en liquidación:</h2>
-            <p id="liquidated-products-more-button"><a href="#">Más</a></p>
-            <div id="liquidated-products-list">
-                <div class="liquidated-product-item">
-                    <img src="fotos/productos/Muffin-helado.jpeg">
-                    <p id="liquidated-product-name">Muffin helado</p>
-                    <p class="price">$1.000</p>
+            <h2 class="products-title">Productos en liquidación:</h2>
+            <p class="products-more-button"><a href="productos.html">Más</a></p>
+            <div class="products-list">
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Muffin-helado.jpeg">
+                        <p class="product-name">Muffin Helado</p>
+                        <p class="buy-text">Añadir al carrito</p>
+                    </a>
+                    <p class="price">$1.234</p>
                 </div>
-                <div class="liquidated-product-item">
-                    <img src="fotos/productos/Pastafrola-batata.jpeg">
-                    <p id="liquidated-product-name">Pastafrola de batata</p>
-                    <p class="price">$1.000</p>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Pastafrola-batata.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Pastafrola de Batata</p>
+                    </a>
+                    <p class="price">$1.234</p>
                 </div>
-                <div class="liquidated-product-item">
-                    <img src="fotos/productos/Pastel-ricota.jpeg">
-                    <p id="liquidated-product-name">Pastel de ricota</p>
-                    <p class="price">$1.000</p>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Pastel-ricota.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Pastel de Ricota</p>
+                    </a>
+                    <p class="price">$1.234</p>
                 </div>
+            </div>  
+        </section>
+
+        <section id="featured-products">
+            <h2 class="products-title">Productos más vendidos:</h2>
+            <p class="products-more-button"><a href="productos.html">Más</a></p>
+            <div class="products-list">
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Bola-de-fraile.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Bolas de Fraile</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Brownie-chocolate.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Brownies de Chocolate</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Brownie-marmolado.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Brownies Marmolados</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Cheesecake-frutilla.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Cheesecake con Frutillas</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Cheesecake-japones-arandano.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Cheesecake Japonés con Arándanos</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Cheesecake-limon-arandano.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Cheesecake de Limón con Arándanos</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Cheesecake-tiramisu.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Cheesecake de Tiramisú</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Churros.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Churros</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                        <img src="fotos/productos/Facturas-membrillo.jpeg">
+                        <p class="buy-text">Añadir al carrito</p>
+                        <p class="product-name">Facturas de Membrillo</p>
+                    </a>
+                    <p class="price">$1.234</p>
+                </div>
+                <div class="product-item">
+                    <a href=#>
+                    <img src="fotos/productos/Facturas-pasteleras.jpeg">
+                    <p class="buy-text">Añadir al carrito</p>
+                    <p class="product-name">Facturas Pasteleras</p>             
+                </a>
+                <p class="price">$1.234</p>
             </div>  
         </section>
 
@@ -57,10 +154,10 @@
         <footer id="footer">
             <p id="copyright">Copyright © 2020 - 2021 Pastelería MG Company. Todos los derechos reservados.</p>
             <div id="socials">
-                <a href="#"><img src="fotos/Facebook_logo.png" alt="Facebook"></a>
-                <a href="#"><img src="fotos/Instagram_logo.png" alt="Instagram"></a>
+                <a href="#"><img src="fotos/header-footer/Facebook_logo.png" alt="Facebook"></a>
+                <a href="#"><img src="fotos/header-footer/Instagram_logo.png" alt="Instagram"></a>
             </div>
-            <a id="politics" href="#">Políticas de servicio</a>
+            <a id="politics" href="politicas.html">Políticas de servicio</a>
         </footer>
         <!--Footer end-->
 

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{ 
+    --pcolor1:#3d405b;
+    --pcolor2:#8d99ae;
+    --pcolor3:#edf2f4;
+    --pcolor4:#f7d59e;
+    --pcolor5:#f1ddbd;
+    --pcolor6:#5d607b;
+}
+
+body{
+    background: url(../fotos/fondo.jpeg);
+    background-size: 1000px 300px;
+    width: 100%;
+    font-family: "Poppins", monospace;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #444444;
+}
+
+@media (max-width: 900px){
+    body{
+        background-size: 500px 150px;
+        font-size: 2vw;
+    }
+}
