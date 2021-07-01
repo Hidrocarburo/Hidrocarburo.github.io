@@ -20,7 +20,7 @@ body{
     color: #444444;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1000px){
     body{
         background-size: 500px 150px;
         font-size: 2.3vw;

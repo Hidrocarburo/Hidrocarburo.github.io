@@ -97,7 +97,7 @@
     grid-column: 2/3;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1000px){
     #header{
         border-bottom: 0.8vw solid var(--pcolor2);
         height: 10vw;
