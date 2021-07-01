@@ -49,6 +49,16 @@
     font-size: 100%;
     align-self: center;
     color: var(--pcolor3);
+    border: 7px solid var(--pcolor6);
+    background-color: var(--pcolor6);
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+
+#header navbar a:hover{
+    background-color: var(--pcolor3);
+    color: #444444;
+    border-color: var(--pcolor3);
 }
 
 #footer{
@@ -87,10 +97,10 @@
     grid-column: 2/3;
 }
 
-@media (max-width: 900px){
+@media (max-width: 950px){
     #header{
         border-bottom: 0.8vw solid var(--pcolor2);
-        height: 5vw;
+        height: 10vw;
     }
 
     #header #logo{
@@ -106,8 +116,8 @@
     }
     
     #header #carrito img{
-        height: 5vw;
-        width: 5vw;
+        height: 10vw;
+        width: 10vw;
         font-size: 100%;
     }
 
@@ -117,36 +127,25 @@
     }
     
     #header navbar a{
-        margin: 1.5vw;
+        margin: 0 1vw 0 0vw;
+        border: 0.2vw solid var(--pcolor6);
+        border-radius: 1vw;
     }
 
     #footer{
         margin: 10vw 0 0 0;
-        height: 20vw;
+        height: 30vw;
     }
     
     #footer #copyright{
-        grid-row: 1/2;
-        grid-column: 1/2;
-        margin: auto;
-        top: 20px;
+        top: 10vw;
+        margin-left: 2.5vw;
     }
     
-    #footer #socials{
-        margin: auto;
-        grid-row: 1/2;
-        grid-column: 2/3;
-    }
     
     #footer #socials img{
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-    }
-    
-    #footer #politics{
-        text-align: center;
-        grid-row: 2/3;
-        grid-column: 2/3;
+        width: 10vw;
+        height: 10vw;
+        margin: 2vw;
     }
 }

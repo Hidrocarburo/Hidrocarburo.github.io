@@ -15,14 +15,15 @@ body{
     width: 100%;
     font-family: "Poppins", monospace;
     font-size: 18px;
-    margin: 0;
+    margin: 50px 0 0 0;
     padding: 0;
     color: #444444;
 }
 
-@media (max-width: 900px){
+@media (max-width: 950px){
     body{
         background-size: 500px 150px;
-        font-size: 2vw;
+        font-size: 2.3vw;
+        margin: 10vw 0 0 0;
     }
 }
