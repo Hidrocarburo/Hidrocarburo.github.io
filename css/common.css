@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 :root{ 
     --pcolor1:#3d405b;
@@ -13,7 +14,7 @@ body{
     background: url(../fotos/fondo.jpeg);
     background-size: 1000px 300px;
     width: 100%;
-    font-family: "Poppins", monospace;
+    font-family: "Roboto Condensed", monospace;
     font-size: 18px;
     margin: 50px 0 0 0;
     padding: 0;
@@ -23,7 +24,7 @@ body{
 @media (max-width: 1000px){
     body{
         background-size: 500px 150px;
-        font-size: 2.3vw;
+        font-size: 2.5vw;
         margin: 10vw 0 0 0;
     }
 }

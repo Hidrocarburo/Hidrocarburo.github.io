@@ -1,6 +1,5 @@
 #header{
     background-color:var(--pcolor1); 
-    border-bottom: 5px solid var(--pcolor2);
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -13,27 +12,12 @@
 
 #header #logo{
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     padding: 5px 8px 5px 5px;
     border-right: 5px solid var(--pcolor1);
     border-bottom: 5px solid var(--pcolor1);
     border-radius: 0 0 15% 0;
-    background-color: var(--pcolor2);
-}
-
-#header #carrito{
-    margin: auto 40px auto auto;
-}
-
-#header #carrito img{
-    text-decoration: none;
-    height: 50px;
-    width: 50px;
-    color: black;
-    background-color:var(--pcolor1);
-    font-size: 100%;
-    align-self: center;
     background-color: var(--pcolor2);
 }
 
@@ -43,7 +27,7 @@
 }
 
 #header navbar a{
-    margin: 20px;
+    margin: 30px;
     text-decoration: none;
     color: #444444;
     font-size: 100%;
@@ -59,6 +43,10 @@
     background-color: var(--pcolor3);
     color: #444444;
     border-color: var(--pcolor3);
+}
+
+#header #menu, #header #checkmenu{
+    display: none;
 }
 
 #footer{
@@ -99,7 +87,6 @@
 
 @media (max-width: 1000px){
     #header{
-        border-bottom: 0.8vw solid var(--pcolor2);
         height: 10vw;
     }
 
@@ -111,25 +98,60 @@
         border-bottom: 0.8vw solid var(--pcolor1);
     }
 
-    #header #carrito{
-        margin: auto 2vw auto auto;
-    }
-    
-    #header #carrito img{
-        height: 10vw;
-        width: 10vw;
-        font-size: 100%;
-    }
-
     #header navbar{
         align-self: center;
         margin-left: 2vw;
     }
-    
+
+    #header #menu{
+        display: block;
+        width: 6vw;
+        height: 6vw;
+        position: absolute;
+        top: 2vw;
+        right: 5.5vw;
+    }
+
+    #header #checkmenu{
+        width: 10vw;
+        height: 10vw;
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 0vw;
+        right: 3vw;
+        z-index: 2;
+    }
+
+    #header #checkmenu:checked{
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        top: 0vw;
+        right: 3vw;
+    }
+
     #header navbar a{
-        margin: 0 1vw 0 0vw;
+        display: none;
+        margin: 0 2vw 0 2vw;
         border: 0.2vw solid var(--pcolor6);
         border-radius: 1vw;
+    }
+
+    #header #checkmenu:checked ~ navbar{
+        position: absolute;
+        top: 10vw;
+        right: 0vw;
+        background-color: var(--pcolor2);
+        width: 50vw;
+        height: 40vh;
+    }
+
+    #header #checkmenu:checked ~ navbar a{
+        font-size: 3vh;
+        display: block;
+        margin: 5vh 1vw 1vh 1vw;
+        text-align: center;
     }
 
     #footer{

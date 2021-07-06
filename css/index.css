@@ -1,41 +1,68 @@
+a{
+    text-decoration: none;
+    color: #444444;
+}
+
 #about{
-    background: repeating-linear-gradient(45deg, var(--pcolor4) 0px, var(--pcolor4) 50px, var(--pcolor5) 50px, var(--pcolor5) 100px);;
+    background-color: var(--pcolor3);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: 0px 10px 20px 0 gray;
     width: 100%;
 }
 
-#about img{
-    display: block;
-    margin: 40px auto 0px auto;
-    padding: 30px;
-    flex-grow: 1;
+#about h1{
+    text-align: center;
+    font-size: 400%;
+    margin: 50px 0 0 0;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+    background-color: var(--pcolor3);
 }
+
+#about hr {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 80%;
+    background-color: transparent;
+    border-style: inset;
+    border-width: 2px;
+    height: 0px;
+    color: var(--pcolor1);
+  }
 
 #about p{
-    background-color: var(--pcolor3);
     align-self: center;
-    margin: 60px 0 0 20px;
-    padding: 40px;
+    margin: 0px 20px 0 20px;
+    padding: 20px;
     border-radius: 25px;
-    text-shadow: 2px 1px 2px var(--pcolor5);
-    flex-grow: 10;
 }
 
-#instagram-feed{
+#slideshow{
     text-align: center;
     width: 100%;
-    padding: 50px 0 50px 0;
-    margin: 30px 0 30px 0;
-    border-top: 4px solid var(--pcolor4);
-    border-bottom: 4px solid var(--pcolor4);
+    height: 22vw;
+    margin: 50px 0 50px 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--pcolor4);
+    overflow: hidden;
+}
+
+#slideshow img{
+    height: 20vw;
+    width: 40vw;
+    margin: 0;
+    padding: 1vw;
+    background-color: var(--pcolor4);
+    position: relative;
 }
 
 .products-title{
     text-align: center;
     font-weight: normal;
-    margin: 0;
+    margin: 0 0 5px 0;
     padding: 0;
     color: var(--pcolor3);
 }
@@ -50,6 +77,7 @@
     display: flex;
     flex-direction: column;
     transition-duration: 0.15s;
+    position: relative;
 }
 
 .product-item a{
@@ -74,24 +102,10 @@
     text-align: center;
     margin: auto 0 auto 0;
     padding: 5px 0 5px 0;
-    font-size: 80%;
+    font-size: 140%;
     color: var(--pcolor3);
+    font-family: "Dancing Script", cursive;
     align-self: center;
-}
-
-.buy-text{
-    display: none;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 5px 0 5px 0;
-    margin: auto 0 auto 0;
-    font-size: 80%;
-    background-color: var(--pcolor5);
-    border-radius: 10px;
-    color: #444444;
-    align-self: center;
-    transition-duration: 1s;
 }
 
 .price{
@@ -104,16 +118,14 @@
 }
 
 .products-more-button{
-    font-size: 80%;
+    font-size: 120%;
     display: block;
     text-align: center;
-    width: 50px;
+    width: 80%;
     padding: 3px;
-    margin: 0 10px -15px auto;;
+    margin: 5px auto 2px auto;
     border: 2px solid var(--pcolor4);
-    background-color: var(--pcolor3);
-    position: relative;
-    bottom: 20px;
+    background-color: var(--pcolor4);
     transition-duration: 0.2s; 
 }
 
@@ -123,7 +135,7 @@
 }
 
 .products-more-button:hover{
-    background-color: var(--pcolor4);
+    background-color: var(--pcolor5);
 }
 
 .products-list{
@@ -133,27 +145,6 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
     margin: 0;
     padding: 20px 0 20px 0;
-}
-
-.product-item:hover{
-    background-color: var(--pcolor6);
-    border-color: var(--pcolor6)
-}
-
-.product-item:hover .product-name{
-    display: none;
-}
-
-.product-item:hover .buy-text{
-    display: block;
-}
-
-.product-item:hover img{
-    opacity: 0.5;
-}
-
-.product-item .buy-text:hover{
-    text-decoration: underline;
 }
 
 #liquidated-products{
@@ -172,29 +163,41 @@
 
 @media (max-width: 1000px){
     #about{
-        background: repeating-linear-gradient(45deg, var(--pcolor4) 0px, var(--pcolor4) 5vw, var(--pcolor5) 5vw, var(--pcolor5) 10vw);;
         box-shadow: 0px 1vw 2vw 0 gray;
     }
-    
-    #about img{
-        margin: 4vw auto 0px auto;
-        padding: 30px;
+
+    #about h1{
+        text-align: center;
+        font-size: 400%;
+        margin: 5vw 0 0 0;
+        padding: 1vw;
+        font-family: 'Dancing Script', cursive;
+        background-color: var(--pcolor3);
     }
     
+    #about hr {
+        display: block;
+        margin-top: 1vw;
+        margin-bottom: 0.5vw;
+        width: 80%;
+        background-color: transparent;
+        border-style: inset;
+        border-width: 0.1em;
+        height: 0px;
+        color: var(--pcolor1);
+      }
+    
     #about p{
-        margin: 4vw 0 0 2vw;
+        margin: 0 0 0 2vw;
         padding: 4vw;
         border-radius: 2vw;
         text-shadow: 0.5vw 0.25vw 0.5vw var(--pcolor5);
     }
 
-    #instagram-feed{
-        text-align: center;
+    #slideshow{
         width: 100%;
-        padding: 5vw 0 5vw 0;
-        margin: 3vw 0 3vw 0;
-        border-top: 0.4vw solid var(--pcolor4);
-        border-bottom: 0.4vw solid var(--pcolor4);
+        height: 22vw;
+        margin: 5vw 0 5vw 0;
     }
     
     .product-item{
@@ -202,7 +205,7 @@
         margin: 1vw;
         width: 25vw;
         border-radius: 1vw 1vw 0 0;
-        box-shadow: 1vw 1vw 10vw 0 black;
+        box-shadow: 0vw 0vw 1.5vw 0 black;
     }
     
     
@@ -228,11 +231,14 @@
     }
     
     .products-more-button{
-        width: 5vw;
-        padding: 1vw;
-        margin: 0 1vw -1.5vw auto;;
-        border: 2px solid var(--pcolor4);
-        bottom: 3vw;
+        font-size: 120%;
+        display: block;
+        text-align: center;
+        width: 80%;
+        padding: 0.3vw;
+        margin: 0.5vw auto 0.2vw auto;
+        background-color: var(--pcolor4);
+        transition-duration: 0.2s; 
     }
     
     .products-list{
