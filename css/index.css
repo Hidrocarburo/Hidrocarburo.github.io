@@ -1,8 +1,3 @@
-a{
-    text-decoration: none;
-    color: #444444;
-}
-
 #about{
     background-color: var(--pcolor3);
     display: flex;
@@ -34,7 +29,7 @@ a{
 
 #about p{
     align-self: center;
-    margin: 0px 20px 0 20px;
+    margin: 0px 100px 0 100px;
     padding: 20px;
     border-radius: 25px;
 }
@@ -42,21 +37,135 @@ a{
 #slideshow{
     text-align: center;
     width: 100%;
-    height: 22vw;
+    height: 500px;
     margin: 50px 0 50px 0;
-    padding: 0;
-    display: flex;
-    background-color: var(--pcolor4);
-    overflow: hidden;
+    padding: 1px 1px 1px 1px;
+    border-top: 10px solid var(--pcolor6);
+    border-bottom: 10px solid var(--pcolor6);
+    background-color: #444444;
+    position: relative;
 }
 
-#slideshow img{
-    height: 20vw;
-    width: 40vw;
-    margin: 0;
-    padding: 1vw;
-    background-color: var(--pcolor4);
-    position: relative;
+#slideshow-image{
+    animation-name: slideshow;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    opacity: 0;
+}
+
+#slideshow-text{
+    position: absolute;
+    display: block;
+    border: 10px solid var(--pcolor6);
+    background-color: rgba(0,0,0, 0.7);
+    width: 80%;
+    height: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#slideshow-text p{
+    font-size: 150%;
+    color: var(--pcolor3);
+    width: 100%;
+    padding: 0;
+    margin: 50px 0 40px 0;
+}
+
+@keyframes slideshow{
+    0%{
+        background-image: url(../fotos/slideshow/productos.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        opacity: 0;
+    }
+
+    1%{
+        opacity: 1;
+    }
+    30%{
+        background-image: url(../fotos/slideshow/productos.jpg);
+        opacity: 1;
+    }
+
+    31%{
+        opacity: 0;
+    }
+
+    32%{
+        background-image: url(../fotos/slideshow/artesanal.jpg);
+    }
+
+    33%{
+        background-image: url(../fotos/slideshow/artesanal.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        opacity: 1;
+    }
+
+    63%{
+        background-image: url(../fotos/slideshow/artesanal.jpg);
+        opacity: 1;
+    }
+
+    64%{
+        opacity: 0;
+    }
+
+    65%{
+        background-image: url(../fotos/slideshow/mostrador.jpeg);
+    }
+
+    66%{
+        background-image: url(../fotos/slideshow/mostrador.jpeg);
+        background-position-x: center;
+        background-position-y: center;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        opacity: 1;
+    }
+
+    99%{
+        background-image: url(../fotos/slideshow/mostrador.jpeg);
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
 }
 
 .products-title{
@@ -167,24 +276,15 @@ a{
     }
 
     #about h1{
-        text-align: center;
-        font-size: 400%;
         margin: 5vw 0 0 0;
         padding: 1vw;
-        font-family: 'Dancing Script', cursive;
-        background-color: var(--pcolor3);
     }
     
     #about hr {
-        display: block;
         margin-top: 1vw;
         margin-bottom: 0.5vw;
-        width: 80%;
-        background-color: transparent;
-        border-style: inset;
         border-width: 0.1em;
         height: 0px;
-        color: var(--pcolor1);
       }
     
     #about p{
@@ -196,8 +296,19 @@ a{
 
     #slideshow{
         width: 100%;
-        height: 22vw;
+        height: 70vw;
         margin: 5vw 0 5vw 0;
+        padding: 0.2vw 0.2vw 0.2vw 0.2vw;
+        border-top: 3vw solid var(--pcolor6);
+        border-bottom: 3vw solid var(--pcolor6);
+    }
+    
+    #slideshow-text{
+        border: 1.5vw solid var(--pcolor6);
+    }
+    
+    #slideshow-text p{
+        margin: 5vw 0 4vw 0;
     }
     
     .product-item{
