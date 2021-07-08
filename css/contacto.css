@@ -72,7 +72,12 @@
         margin-bottom: 0.5vw;
         border-width: 0.2em;
         height: 0px;
-      }
+    }
+
+    #socials{
+        flex-direction: column;
+        align-items: center;
+    }
     
     
     #socials ul hr{
@@ -96,5 +101,10 @@
     
     #whatsapp-chat p{
         padding: 0;
+    }
+
+    #footer-space{
+        height: 30vh;
+        width: 1px;
     }
 }
