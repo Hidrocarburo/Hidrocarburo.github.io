@@ -19,6 +19,7 @@ body{
     margin: 50px 0 0 0;
     padding: 0;
     color: #444444;
+    overflow-x: hidden;
 }
 
 @media (max-width: 1000px){

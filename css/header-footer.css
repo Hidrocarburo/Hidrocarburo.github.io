@@ -59,7 +59,7 @@
     font-size: 80%;
     color: black;
     position: relative;
-    z-index: 3;
+    z-index: 9;
 }
 
 #footer #copyright{

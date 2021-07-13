@@ -5,7 +5,7 @@
     box-shadow: 0px 10px 20px 0 gray;
     width: 100%;
     height: 300px;
-    display: relative;
+    position: relative;
 }
 
 #about-products h1{
@@ -39,78 +39,311 @@
     position: sticky;
     top: 50px;
     left: 0px;
-    height: 100%;
+    height: 120vh;
     width: 200px;
     background-color: var(--pcolor3);;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 20px 20px gray;
+    box-shadow: 5px 5px 8px gray;
     overflow-x: scroll;
     text-align: center;
+    float: left;
 }
 
 #navbar-products input{
-    opacity: 0;
+    opacity: 1;
+    position: absolute;
 }
 
 #navbar-products hr{
     opacity: 0;
     background-color: var(--pcolor3);
+    margin-bottom: 20px;
 }
 
 .navbar-items{
     padding: 20px 0 20px 0;
     cursor: pointer;
-    margin-left: -25px;
-    transition-duration: 0.1s;
 }
 
-.navbar-items:hover{
+.navbar-items:hover{opacity: 0.5;}
+
+[name='navbar-product-list']{
+    display: none;
+}
+
+#navbar-button1{background-color:#DCE1E3;}
+
+#navbar-item1:checked ~ #navbar-products #navbar-button1{
     opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-#navbar-button1{
-    background-color:#DCE1E3;
+#navbar-button2{background-color: var(--pcolor3);}
+
+#navbar-item2:checked ~ #navbar-products #navbar-button2{
+    opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-#navbar-item1:checked ~ #navbar-button2{
-    width: 1000px;
+#navbar-button3{background-color:#DCE1E3;}
+
+#navbar-item3:checked ~ #navbar-products #navbar-button3{
+    opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#navbar-button4{background-color: var(--pcolor3);}
+
+#navbar-item4:checked ~ #navbar-products #navbar-button4{
+    opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#navbar-button5{background-color:#DCE1E3;}
+
+#navbar-item5:checked ~ #navbar-products #navbar-button5{
+    opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#navbar-button6{background-color: var(--pcolor3);}
+
+#navbar-item6:checked ~ #navbar-products #navbar-button6{
+    opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#navbar-button7{background-color:#DCE1E3;}
+
+#navbar-item7:checked ~ #navbar-products #navbar-button7{
+    opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#navbar-button8{background-color: var(--pcolor3);}
+
+#navbar-item8:checked ~ #navbar-products #navbar-button8{
+    opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#navbar-button9{background-color:#DCE1E3;}
+
+#navbar-item9:checked ~ #navbar-products #navbar-button9{
+    opacity: 0.5;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#products{
+    background-color: var(--pcolor1);
+    margin: 40px 20px 20vw 220px;
+    padding: 0px;
+    border: 5px solid var(--pcolor1);
+}
+
+.products-title{
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    padding: 0;
+    color: var(--pcolor3);
+}
+
+.product-item{
+    background-color: var(--pcolor1);
+    border: 5px solid var(--pcolor1);
+    margin: 25px;
+    width: 200px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 20px 0 black;
+    display: none;
+    flex-direction: column;
+    transition-duration: 0.15s;
+    position: relative;
+}
+
+.product-item a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    transition-duration: 0.15s;
+}
+
+.product-name{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: auto 0 auto 0;
+    padding: 5px 0 5px 0;
+    font-size: 140%;
+    color: var(--pcolor3);
+    font-family: "Dancing Script", cursive;
+    align-self: center;
+}
+
+.price{
+    display: block;
     background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto 0 0 0;
 }
 
-#navbar-button2{
-    background-color: var(--pcolor3);
+.products-more-button{
+    font-size: 120%;
+    display: block;
+    text-align: center;
+    width: 80%;
+    padding: 3px;
+    margin: 5px auto 2px auto;
+    border: 2px solid var(--pcolor4);
+    background-color: var(--pcolor4);
+    transition-duration: 0.2s; 
 }
 
-#navbar-button3{
-    background-color:#DCE1E3;
+.products-more-button a{
+    text-decoration: none;
+    color: #444444;
 }
 
-#navbar-button4{
-    background-color: var(--pcolor3);
+.products-more-button:hover{
+    background-color: var(--pcolor5);
 }
 
-#navbar-button5{
-    background-color:#DCE1E3;
+.products-list{
+    background-color: var(--pcolor2);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
+    margin: 0;
+    padding: 20px 0 20px 0;
 }
 
-#navbar-button6{
-    background-color: var(--pcolor3);
-}
+#navbar-item1:checked ~ #products .products-list .product-item{display: flex;}
+#navbar-item2:checked ~ #products .products-list .brownies{display: flex;}
+#navbar-item3:checked ~ #products .products-list .pasteles{display: flex;}
+#navbar-item4:checked ~ #products .products-list .pastafrolas{display: flex;}
+#navbar-item5:checked ~ #products .products-list .tartas{display: flex;}
+#navbar-item6:checked ~ #products .products-list .facturas{display: flex;}
+#navbar-item7:checked ~ #products .products-list .tiramisu{display: flex;}
+#navbar-item8:checked ~ #products .products-list .churros{display: flex;}
+#navbar-item9:checked ~ #products .products-list .magdalenas{display: flex;}
 
-#navbar-button7{
-    background-color:#DCE1E3;
-}
+@media (max-width: 1000px){
+    #about-products{
+        box-shadow: 0px 1vw 2vw 0 gray;
+        height: 35vw;
+    }
+    
+    #about-products h1{
+        font-size: 400%;
+        margin: 5vw 0 0 0;
+        padding: 1vw;
+    }
+    
+    #about-products hr {
+        margin-top: 1vw;
+        margin-bottom: 0.5vw;
+        border-width: 0.1em;
+        height: 0px;
+    }
+    
+    #about-products p{
+        margin: 0 0 0 2vw;
+        padding: 4vw;
+        border-radius: 2vw;
+    }
+    
+    #navbar-products{
+        top: 5vw;
+        left: 0px;
+        height: 120vh;
+        width: 20vw;
+        box-shadow: 0.5vw 0.5vw 0.8vw gray;
+    }
+    
+    #navbar-products hr{
+        margin-bottom: 2vw;
+    }
+    
+    .navbar-items{
+        padding: 2vw 0 2vw 0;
+        font-size: 150%;
+    }
+    
+    #products{
+        background-color: var(--pcolor1);
+        margin: 4vw 2vw 20vw 22vw;
+        padding: 0px;
+        border: 0.5vw solid var(--pcolor1);
+    }
+    
+    .products-title{
+        text-align: center;
+        font-weight: normal;
+        margin: 0 0 0.5vw 0;
+        padding: 0;
+        color: var(--pcolor3);
+    }
+    
+    .product-item{
+        border: 0.6vw solid var(--pcolor1);
+        margin: 1vw;
+        width: 25vw;
+        border-radius: 1vw 1vw 0 0;
+        box-shadow: 0vw 0vw 1.5vw 0 black;
+    }
+    
+    .product-item img{
+        width: 25vw;
+        height: 18vw;
+        border-radius: 1vw;
+        margin: 0 0 1vw 0;
+    }
+    
+    .product-name{
+        padding: 1vw 0 1vw 0;
+    }
+    
+    .price{
+        padding: 1vw;
+        border-radius: 1vw;
+    }
+    
+    .products-more-button{
+        font-size: 120%;
+        display: block;
+        text-align: center;
+        width: 80%;
+        padding: 0.3vw;
+        margin: 0.5vw auto 0.2vw auto;
+        background-color: var(--pcolor4);
+        transition-duration: 0.2s; 
+    }
+    
+    .products-list{
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 2fr));
+        padding: 2vw 0 2vw 0;
+    }
 
-#navbar-button8{
-    background-color: var(--pcolor3);
-}
-
-#navbar-button9{
-    background-color:#DCE1E3;
-}
-
-#products-list{
-    height: 1000px;
-    width: 10px;
 }
