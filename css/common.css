@@ -8,24 +8,28 @@
     --pcolor4:#f7d59e;
     --pcolor5:#f1ddbd;
     --pcolor6:#5d607b;
+    margin: 50px 0 0 0;
+}
+
+*{
+    font-family: "Roboto Condensed", monospace;
+    font-size: 18px;
 }
 
 body{
-    background: url(../fotos/fondo.jpeg);
+    margin:0;
+    background-color: white;
     background-size: 1000px 300px;
     width: 100%;
-    font-family: "Roboto Condensed", monospace;
-    font-size: 18px;
-    margin: 50px 0 0 0;
     padding: 0;
     color: #444444;
     overflow-x: hidden;
 }
 
 @media (max-width: 1000px){
-    body{
-        background-size: 500px 150px;
-        font-size: 2.5vw;
-        margin: 10vw 0 0 0;
-    }
+    body{background-size: 500px 150px;}
+
+    *{font-size: 2.5vw;}
+
+    :root{margin: 12vw 0 0 0;}
 }

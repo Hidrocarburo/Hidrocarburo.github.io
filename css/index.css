@@ -1,43 +1,43 @@
-#about{
+#about-index{
     background-color: var(--pcolor3);
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 10px 20px 0 gray;
     width: 100%;
 }
 
-#about h1{
+#about-index h1{
     text-align: center;
-    font-size: 400%;
-    margin: 50px 0 0 0;
-    padding: 10px;
+    font-size: 200%;
+    margin: -50px 0 0 0;
+    padding-top: 10px;
     font-family: 'Dancing Script', cursive;
     background-color: var(--pcolor3);
 }
 
-#about hr {
+#about-index hr {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    width: 80%;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    padding: 0;
+    width: 15%;
     background-color: transparent;
     border-style: inset;
-    border-width: 2px;
+    border-width: 1px;
     height: 0px;
     color: var(--pcolor1);
   }
 
-#about p{
+#about-index p{
     align-self: center;
     margin: 0px 100px 0 100px;
-    padding: 20px;
-    border-radius: 25px;
+    padding: 10px;
+    font-size: 100%;
 }
 
 #slideshow{
     text-align: center;
     width: 100%;
-    height: 400px;
+    height: 40vw;
     margin: 50px 0 50px 0;
     padding: 1px 1px 1px 1px;
     border-top: 10px solid var(--pcolor6);
@@ -48,74 +48,11 @@
 }
 
 .slideshow-image{
-    width: 100%;
-    height: 150%;
+    width: 80%;
     margin: auto;
     opacity: 1;
+    object-fit:fill;
 }
-
-#sbutton1{
-    position: absolute;
-    left: 42%;
-    bottom: 5%;
-    width: 50px;
-    height: 50px;
-    z-index:2;
-    opacity: 0;
-    cursor: pointer;
-}
-
-#sbutton2{
-    position: absolute;
-    left: 47%;
-    bottom: 5%;
-    width: 50px;
-    height: 50px;
-    z-index:2;
-    opacity: 0;
-    cursor: pointer;
-}
-
-#sbutton3{
-    position: absolute;
-    left: 52%;
-    bottom: 5%;
-    width: 50px;
-    height: 50px;
-    z-index:2;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.sbutton1-style, .sbutton2-style, .sbutton3-style{
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    position: absolute;
-    bottom: 8.4%;
-    border-radius: 50%;
-    transition-duration: 0.2s;
-    border: 1px solid gray;
-}
-
-.sbutton1-style{left:43.4%;}
-.sbutton2-style{left:48.4%;}
-.sbutton3-style{left:53.4%;}
-
-#simage1{display: none;}
-#simage2{display: none;}
-#simage3{display: none;}
-
-#sbutton1:checked ~ #simage1{display: block;}
-#sbutton1:checked ~ #sbutton4{display: block;}
-#sbutton1:checked ~ .sbutton1-style{background-color:silver;}
-#sbutton2:checked ~ #simage2{display: block;}
-#sbutton2:checked ~ #sbutton5{display: block;}
-#sbutton2:checked ~ #sbutton6{display: block;}
-#sbutton2:checked ~ .sbutton2-style{background-color:silver;}
-#sbutton3:checked ~ #simage3{display: block;}
-#sbutton3:checked ~ #sbutton7{display: block;}
-#sbutton3:checked ~ .sbutton3-style{background-color:silver;}
 
 .products-title{
     text-align: center;
@@ -147,7 +84,7 @@
 }
 
 .product-item img{
-    width: 200px;
+    width: 190px;
     height: 150px;
     border-radius: 10px;
     margin: 0 0 10px 0;
@@ -220,44 +157,44 @@
 }
 
 @media (max-width: 1000px){
-    #about{
-        box-shadow: 0px 1vw 2vw 0 gray;
+
+    #about-index{
+        background-color: var(--pcolor3);
+        height: 5vw;
     }
 
-    #about h1{
-        margin: 5vw 0 0 0;
-        padding: 1vw;
+    #about-index h1{
+        margin: -12vw 0 0 0;
+        padding-top: 2vw;
+        background-color: var(--pcolor3);
     }
     
-    #about hr {
-        margin-top: 1vw;
+    #about-index hr {
+        margin-top: 0vw;
         margin-bottom: 0.5vw;
-        border-width: 0.1em;
+        border-width: 0.05em;
         height: 0px;
-      }
+        width: 30%;
+        position: absolute;
+        top: 7.5vw;
+        left: 34.5%;
+    }
     
-    #about p{
-        margin: 0 0 0 2vw;
-        padding: 4vw;
-        border-radius: 2vw;
-        text-shadow: 0.5vw 0.25vw 0.5vw var(--pcolor5);
+    #about-index p{
+        margin: 0;
+        padding: 0vw 0vw 3vw 0vw;
+        width: 100%;
+        text-align: center;
+        background-color: var(--pcolor3);
     }
 
     #slideshow{
         width: 100%;
-        height: 70vw;
+        height: 40vw;
         margin: 5vw 0 5vw 0;
         padding: 0.2vw 0.2vw 0.2vw 0.2vw;
-        border-top: 3vw solid var(--pcolor6);
-        border-bottom: 3vw solid var(--pcolor6);
-    }
-    
-    #slideshow-text{
-        border: 1.5vw solid var(--pcolor6);
-    }
-    
-    #slideshow-text p{
-        margin: 5vw 0 4vw 0;
+        border-top: 1vw solid var(--pcolor6);
+        border-bottom: 1vw solid var(--pcolor6);
     }
     
     .product-item{

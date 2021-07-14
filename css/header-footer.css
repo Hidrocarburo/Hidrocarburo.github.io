@@ -7,14 +7,15 @@
     left: 0px;
     width: 100%;
     height: 50px;
-    z-index: 10;
+    z-index: 999;
 }
 
 #header #logo{
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     padding: 5px 8px 5px 5px;
+    margin: 0;
     border-right: 5px solid var(--pcolor1);
     border-bottom: 5px solid var(--pcolor1);
     border-radius: 0 0 15% 0;
@@ -24,18 +25,18 @@
 #header navbar{
     align-self: center;
     margin-left: 20px;
+    display: flex;
 }
 
 #header navbar a{
-    margin: 30px;
+    margin: 0px 30px 0px 30px;
+    padding: 12px 2px 12px 2px;
     text-decoration: none;
     color: #444444;
     font-size: 100%;
     align-self: center;
     color: var(--pcolor3);
-    border: 7px solid var(--pcolor6);
     background-color: var(--pcolor6);
-    border-radius: 20px;
     transition-duration: 0.2s;
 }
 
@@ -51,6 +52,8 @@
 
 #footer{
     display: grid;
+    position: relative;
+    width: 100%;
     margin: 200px 0 0 0;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
@@ -58,8 +61,7 @@
     height: 150px;
     font-size: 80%;
     color: black;
-    position: relative;
-    z-index: 9;
+    z-index: 998;
 }
 
 #footer #copyright{
@@ -93,8 +95,8 @@
     }
 
     #header #logo{
-        width: 8vw;
-        height: 8vw;
+        width: 10vw;
+        height: 10vw;
         padding: 0.6vw 1.1vw 0.6vw 0.6vw;
         border-right: 0.8vw solid var(--pcolor1);
         border-bottom: 0.8vw solid var(--pcolor1);
@@ -118,30 +120,24 @@
         width: 10vw;
         height: 10vw;
         display: block;
-        opacity: 0;
+        opacity: 1;
         position: absolute;
         top: 0vw;
         right: 3vw;
         z-index: 2;
     }
 
-    #header #checkmenu:checked{
-        width: 10vw;
-        height: 10vw;
-        position: absolute;
-        top: 0vw;
-        right: 3vw;
-    }
-
     #header navbar a{
         display: none;
         margin: 0 2vw 0 2vw;
         border: 0.2vw solid var(--pcolor6);
-        border-radius: 1vw;
     }
 
     #header #checkmenu:checked ~ navbar{
         position: absolute;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 10vh);
         top: 10vw;
         right: 0vw;
         background-color: var(--pcolor2);
@@ -152,8 +148,9 @@
     #header #checkmenu:checked ~ navbar a{
         font-size: 3vh;
         display: block;
-        margin: 5vh 1vw 1vh 1vw;
+        margin: 2vh 1vw 1vh 1vw;
         text-align: center;
+        padding: 0;
     }
 
     #footer{
