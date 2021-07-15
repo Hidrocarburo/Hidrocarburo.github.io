@@ -1,0 +1,15 @@
+h1{
+    display: block;
+    text-align: center;
+    padding-top: 150px;
+}
+
+p{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#footer-space{
+    height: 60px;
+}

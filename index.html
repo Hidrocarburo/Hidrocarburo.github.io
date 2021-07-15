@@ -15,6 +15,7 @@
     <body>
 
         <section id="about-index">
+            <img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png">
             <h1> Pastelería MG</h1>
             <hr>
             <p>Pastelería dedicada a las tortas caseras, facturas, brownies, pastafrolas, y más.</p>
@@ -22,14 +23,22 @@
 
         <!--Header start-->
         <header id="header" style="position: sticky">
-            <a href="index.html"><img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png" alt="Logo Pastelería MG"></a>
             <input type="checkbox" id="checkmenu">
+            <a href="index.html"><img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png" alt="Logo Pastelería MG"></a>
             <img id="menu" src="fotos/header-footer/Menu.png">
             <navbar>
-                <a id="Productos" href="productos.html">Productos</a>
-                <a id="Establecimientos" href="establecimientos.html">Establecimientos</a>
-                <a id="Contacto" href="contacto.html">Contacto</a>
-                <a id="Preguntas-Frecuentes" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                <a id="inicio" href="index.html">Inicio</a>
+                <div class="subnav">
+                    <a id="productos" href="productos.html" class="subnav-btn">Productos</a>
+                    <div class="subnav-links">
+                        <a href="productos.html">Listado</a>
+                        <a href="#">Pastelería</a>
+                        <a href="#">Catering</a>
+                    </div>
+                </div>
+                <a id="establecimientos" href="establecimientos.html">Establecimientos</a>
+                <a id="contacto" href="contacto.html">Contacto</a>
+                <a id="preguntas-frecuentes" href="preguntas-frecuentes.html">Ayuda</a>
             </navbar> 
         </header>
         <!--Header end-->

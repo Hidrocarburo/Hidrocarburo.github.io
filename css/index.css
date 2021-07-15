@@ -34,6 +34,14 @@
     font-size: 100%;
 }
 
+#about-index #logo{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 90px;
+    height: 90px;
+}
+
 #slideshow{
     text-align: center;
     width: 100%;
@@ -42,7 +50,7 @@
     padding: 1px 1px 1px 1px;
     border-top: 10px solid var(--pcolor6);
     border-bottom: 10px solid var(--pcolor6);
-    background-color: #444444;
+    background-color: black;
     position: relative;
     overflow: hidden;
 }
@@ -118,7 +126,7 @@
     text-align: center;
     width: 80%;
     padding: 3px;
-    margin: 5px auto 2px auto;
+    margin: 0px auto 0px auto;
     border: 2px solid var(--pcolor4);
     background-color: var(--pcolor4);
     transition-duration: 0.2s; 
@@ -144,16 +152,14 @@
 
 #liquidated-products{
     background-color: var(--pcolor1);
-    margin: 80px 200px 0px 200px;
+    margin: 40px 20px 0px 20px;
     padding: 0px;
-    border: 5px solid var(--pcolor1);
 }
 
 #featured-products{
     background-color: var(--pcolor1);
     margin: 40px 20px 0px 20px;
     padding: 0px;
-    border: 5px solid var(--pcolor1);
 }
 
 @media (max-width: 1000px){
@@ -163,6 +169,10 @@
         height: 5vw;
     }
 
+    #about-index #logo{
+        display: none;
+    }
+    
     #about-index h1{
         margin: -12vw 0 0 0;
         padding-top: 2vw;
@@ -239,7 +249,7 @@
 
     #liquidated-products{
         background-color: var(--pcolor1);
-        margin: 8vw 5vw 0vw 5vw;
+        margin: 4vw 2vw 0px 2vw;
         padding: 0px;
         border: 1vw solid var(--pcolor1);
     }
