@@ -13,6 +13,7 @@
         <!--Header start-->
         <header id="header">
             <input type="checkbox" id="checkmenu">
+            <a href="index.html"><img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png" alt="Logo Pastelería MG"></a>
             <img id="menu" src="fotos/header-footer/Menu.png">
             <navbar>
                 <a id="inicio" href="index.html">Inicio</a>
@@ -26,7 +27,6 @@
                 </div>
                 <a id="establecimientos" href="establecimientos.html">Establecimientos</a>
                 <a id="contacto" href="contacto.html">Contacto</a>
-                <a id="preguntas-frecuentes" href="preguntas-frecuentes.html">Ayuda</a>
             </navbar> 
         </header>
         <!--Header end-->
@@ -38,7 +38,7 @@
                 <ul>
                     <li><p><b>Correo:</b> pasteleriamg@contactenos.com.ar</p></li>
                     <hr>
-                    <li><p><b>Número:</b> +54-9-11-1234-5678</p></li>
+                    <li><p><b>Número:</b> 11 1234 5678</p></li>
                     <hr>
                     <li><p><b>Instagram:</b> @PasteleriaMG</p></li>
                 </ul>
@@ -49,16 +49,22 @@
 
         <section id="survey-form">
             <div id="survey-container">
+                <p>¡Completa los campos para recibir las últimas novedades acerca de la pastelería!</p>
                 <form action="confirmation-page.html">
                     <input type="text" id="nombre" placeholder="Nombre" required>
                     <input type="text" id="apellido" placeholder="Apellido" required>
                     <input type="email" id="email" placeholder="Correo electrónico" required>
                     <input type="tel" id="celular" placeholder="Celular" required>
-                    <input type="submit" id="enviar" value="Enviar">
+                    <input type="submit" id="enviar" value="Enviar" class="g-recaptcha" data-sitekey="6LdSctkbAAAAAF4q6pUfrgbJhyuSx0g076OrWVOP" data-callback='onSubmit' data-action='submit'>
                 </form>
             </div>
         </section>
 
+        <script src="https://www.google.com/recaptcha/api.js">
+            function onSubmit(token) {
+              document.getElementById("survey-form").submit();
+            }
+        </script>
 
         <!--Footer start-->
         <footer id="footer">

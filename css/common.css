@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
 :root{ 
     --pcolor1:#3d405b;
@@ -13,7 +13,7 @@
 }
 
 *{
-    font-family: "Lato", monospace;
+    font-family: 'Rufina', serif;
     font-size: 18px;
 }
 

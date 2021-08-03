@@ -9,8 +9,8 @@
 
 #contact h1{
     text-align: center;
-    font-size: 400%;
-    margin: 50px 0 0 0;
+    font-size: 200%;
+    margin: 60px 0 0 0;
     padding: 10px;
     background-color: var(--pcolor3);
 }
@@ -18,7 +18,7 @@
 #contact hr {
     display: block;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 80%;
     background-color: transparent;
     border-style: inset;
@@ -59,8 +59,8 @@
 
 #survey-form{
     margin: auto;
-    width: 50%;
-    height: 400px;
+    width: 80%;
+    height: 450px;
     background-color: rgba(60,60,90,0.5);
     border-radius: 40px;
 }
@@ -69,6 +69,13 @@
     margin: 60px;
     padding-top: 60px;
     text-align: center;
+}
+
+#survey-container p{
+    font-size: 120%;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
 }
 
 #survey-container form{
@@ -115,7 +122,6 @@
     }
     
     #contact h1{
-        font-size: 400%;
         margin: 5vw 0 0 0;
         padding: 1vw;
     }
@@ -161,7 +167,7 @@
     }
 
     #survey-form{
-        height: 40vw;
+        height: 50vw;
         width: 90%;
         background-color: rgba(60,60,90,0.5);
         border-radius: 4vw;
@@ -170,6 +176,12 @@
     #survey-container{
         margin: 6vw;
         padding-top: 6vw;
+    }
+
+    #survey-container p{
+        margin-bottom: 4vw;
+        color: white;
+        text-shadow: 0.1vw 0.1vw 1vw black;
     }
     
     #survey-container form{
