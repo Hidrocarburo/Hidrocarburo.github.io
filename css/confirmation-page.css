@@ -13,3 +13,10 @@ p{
 #footer-space{
     height: 60px;
 }
+
+@media (max-width: 1000px){
+    #confirm-info{
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
+}

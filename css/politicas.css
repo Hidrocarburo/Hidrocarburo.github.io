@@ -1,0 +1,17 @@
+#tos{
+    margin: 50px 100px 0 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tos h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#tos h2{
+    text-decoration: underline;
+}
+
+#tos p{
+    font-size: 120%;
+}

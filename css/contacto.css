@@ -27,13 +27,13 @@
     color: var(--pcolor1);
   }
 
-#socials{
+#contact-socials{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
 }
 
-#socials ul hr{
+#contact-socials ul hr{
     border-width: 1px;
     opacity: 0.5;
     margin: 20px;
@@ -41,7 +41,7 @@
     padding: 0;
 }
 
-#socials p{
+#contact-socials p{
     align-self: center;
     margin: 0px 20px 0 20px;
     padding: 20px;
@@ -60,7 +60,7 @@
 #survey-form{
     margin: auto;
     width: 80%;
-    height: 450px;
+    height: 400px;
     background-color: rgba(60,60,90,0.5);
     border-radius: 40px;
 }
@@ -123,7 +123,7 @@
     
     #contact h1{
         margin: 5vw 0 0 0;
-        padding: 1vw;
+        padding: 5vw;
     }
     
     #contact hr {
@@ -133,13 +133,13 @@
         height: 0px;
     }
 
-    #socials{
+    #contact-socials{
         flex-direction: column;
         align-items: center;
     }
     
     
-    #socials ul hr{
+    #contact-socials ul hr{
         border-width: 0.1em;
         opacity: 0.5;
         margin: 2vw;
@@ -147,7 +147,7 @@
         padding: 0;
     }
     
-    #socials p{
+    #contact-socials p{
         margin: 0px 2vw 0 2vw;
         padding: 20px;
         border-radius: 25px;

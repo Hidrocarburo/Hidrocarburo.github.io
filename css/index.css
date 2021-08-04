@@ -12,19 +12,20 @@
     padding-top: 10px;
     font-family: 'Dancing Script', cursive;
     background-color: var(--pcolor3);
+    position: relative;
+    top: 2px;
 }
 
-#about-index hr {
+#about-index .line {
     display: block;
-    margin-top: 1px;
-    margin-bottom: 2px;
+    margin: 1px auto 2px auto;
     padding: 0;
-    width: 15%;
-    background-color: transparent;
-    border-style: inset;
-    border-width: 1px;
-    height: 0px;
-    color: var(--pcolor1);
+    width: 30%;
+    height: 1px;
+    background-color: #444;
+    padding: 0;
+    position: relative;
+    z-index: 2;
   }
 
 #about-index p{
@@ -41,6 +42,7 @@
     left: 20px;
     width: 90px;
     height: 90px;
+    z-index: 2;
 }
 
 #slideshow{
@@ -176,20 +178,22 @@
     
     #about-index h1{
         margin: -12vw 0 0 0;
-        padding-top: 2vw;
+        padding-top: 1vw;
         background-color: var(--pcolor3);
+        top: 0.5vw
     }
-    
-    #about-index hr {
-        margin-top: 0vw;
-        margin-bottom: 0.5vw;
-        border-width: 0.05em;
-        height: 0px;
+
+    #about-index .line {
+        display: block;
+        margin: 0 auto 0.5vw auto;
+        padding: 0;
         width: 30%;
-        position: absolute;
-        top: 7.5vw;
-        left: 34.5%;
-    }
+        height: 0.1vw;
+        background-color: #444;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+      }
     
     #about-index p{
         margin: 0;
