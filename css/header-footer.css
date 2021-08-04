@@ -46,13 +46,14 @@
 .subnav {
     float: left;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .subnav-links {
     display: none;
     position: absolute;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     width: 100%;
     z-index: 1;
 }
@@ -109,16 +110,6 @@
     text-align: center;
     grid-row: 2/3;
     grid-column: 2/3;
-}
-
-#footer #empty-space{
-    position: absolute;
-    overflow-y: auto;
-    top: 150px;
-    display: block;
-    height: 10vh;
-    width: 100%;
-    background-color: silver;
 }
 
 @media (max-width: 1000px){
@@ -214,15 +205,5 @@
         width: 10vw;
         height: 10vw;
         margin: 2vw;
-    }
-
-    #footer #empty-space{
-        position: absolute;
-        overflow-y: auto;
-        top: 25vw;
-        display: block;
-        height: 20vh;
-        width: 100%;
-        background-color: silver;
     }
 }

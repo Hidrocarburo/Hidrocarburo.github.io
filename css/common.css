@@ -20,11 +20,13 @@
 body{
     margin:0;
     background-color: white;
-    background-size: 1000px 300px;
     width: 100%;
     padding: 0;
     color: #444444;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 @media (max-width: 1000px){

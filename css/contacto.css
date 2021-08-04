@@ -58,16 +58,15 @@
 }
 
 #survey-form{
-    margin: auto;
+    margin: 50px auto auto auto;
     width: 80%;
-    height: 400px;
+    height: 460px;
     background-color: rgba(60,60,90,0.5);
     border-radius: 40px;
 }
 
 #survey-container{
     margin: 60px;
-    padding-top: 60px;
     text-align: center;
 }
 
