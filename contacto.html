@@ -62,15 +62,19 @@
                     <input type="text" id="apellido" placeholder="Apellido" required>
                     <input type="email" id="email" placeholder="Correo electrónico" required>
                     <input type="tel" id="celular" placeholder="Celular" required>
-                    <button id="enviar" class="g-recaptcha" data-sitekey="6LdSctkbAAAAAF4q6pUfrgbJhyuSx0g076OrWVOP" data-callback='onSubmit' data-action='submit'>Enviar</button>
+                    <button id="enviar" class="g-recaptcha" onsubmit="submitform(e)">Enviar</button>
                 </form>
             </div>
         </section>
 
-        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LdSctkbAAAAAF4q6pUfrgbJhyuSx0g076OrWVOP"></script>
         <script>
-            function onSubmit(token) {
-              document.getElementById("survey").submit();
+            function submitform(e) {
+              e.preventDefault();
+              grecaptcha.ready(function() {
+                grecaptcha.execute('6LdSctkbAAAAAF4q6pUfrgbJhyuSx0g076OrWVOP', {action: 'submit'}).then(function(token) {
+                });
+              });
             }
         </script>
 
