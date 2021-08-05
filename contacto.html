@@ -55,29 +55,33 @@
             </div>
         </section>
 
+        <script>
+            function verificarCaptcha(e){
+                var verificacion;
+                verificacion = grecaptcha.getResponse();
+                document.getElementById("enviar").addEventListener("click", function(event){event.preventDefault()});
+                if (verificacion == null || verificacion == "") {
+                    event.preventDefault();
+                    return false;
+                }else{
+                    document.getElementById("survey").submit();
+                }
+            }
+        </script>
+
         <section id="survey-form">
             <div id="survey-container">
                 <p>¡Completa los campos para recibir las últimas novedades acerca de la pastelería!</p>
-                <form action="confirmation-page.html" id="survey">
+                <form action="" id="survey">
                     <input type="text" id="nombre" placeholder="Nombre" required>
                     <input type="text" id="apellido" placeholder="Apellido" required>
                     <input type="email" id="email" placeholder="Correo electrónico" required>
                     <input type="number" id="celular" placeholder="Celular" required>
                     <div class="g-recaptcha" id="captcha" data-sitekey="6LcxVOAbAAAAAHU5IA8nQXjCqCZtLumm6U2taEvc"></div>
-                    <input type="submit" value="Enviar" onclick="verificarCaptcha(e)" id="enviar">
+                    <input type="submit" value="Enviar" onClick="verificarCaptcha()" id="enviar">
                 </form>
             </div>
         </section>
-
-        <script>
-            function verificarCaptcha(e){
-                verificacion = grecaptcha.getResponse();
-                if (verificacion == null || verificacion == "") {
-                    e.preventDefault();
-                    return false;
-                }
-            }
-        </script>
 
         <!--Footer start-->
         <footer id="footer">
