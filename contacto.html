@@ -15,6 +15,7 @@
 
             gtag('config', 'G-FF7E9J5XPB');
         </script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body>
 
@@ -61,22 +62,12 @@
                     <input type="text" id="nombre" placeholder="Nombre" required>
                     <input type="text" id="apellido" placeholder="Apellido" required>
                     <input type="email" id="email" placeholder="Correo electrónico" required>
-                    <input type="tel" id="celular" placeholder="Celular" required>
-                    <button id="enviar" class="g-recaptcha" onsubmit="submitform(e)">Enviar</button>
+                    <input type="number" id="celular" placeholder="Celular" required>
+                    <div class="g-recaptcha" id="captcha" data-sitekey="6LcxVOAbAAAAAHU5IA8nQXjCqCZtLumm6U2taEvc"></div>
+                    <input type="submit" value="Enviar" id="enviar">
                 </form>
             </div>
         </section>
-
-        <script src="https://www.google.com/recaptcha/api.js?render=6LdSctkbAAAAAF4q6pUfrgbJhyuSx0g076OrWVOP"></script>
-        <script>
-            function submitform(e) {
-              e.preventDefault();
-              grecaptcha.ready(function() {
-                grecaptcha.execute('6LdSctkbAAAAAF4q6pUfrgbJhyuSx0g076OrWVOP', {action: 'submit'}).then(function(token) {
-                });
-              });
-            }
-        </script>
 
         <!--Footer start-->
         <footer id="footer">
