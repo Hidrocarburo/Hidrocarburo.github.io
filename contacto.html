@@ -63,8 +63,6 @@
                 if (verificacion == null || verificacion == "") {
                     event.preventDefault();
                     return false;
-                }else{
-                    document.getElementById("survey").submit();
                 }
             }
         </script>
@@ -72,7 +70,7 @@
         <section id="survey-form">
             <div id="survey-container">
                 <p>¡Completa los campos para recibir las últimas novedades acerca de la pastelería!</p>
-                <form action="" id="survey">
+                <form action="confirmation-page.html" id="survey">
                     <input type="text" id="nombre" placeholder="Nombre" required>
                     <input type="text" id="apellido" placeholder="Apellido" required>
                     <input type="email" id="email" placeholder="Correo electrónico" required>
