@@ -59,7 +59,7 @@
             function verificarCaptcha(e){
                 var verificacion;
                 verificacion = grecaptcha.getResponse();
-                document.getElementById("enviar").addEventListener("click", function(event){event.preventDefault()});
+                document.getElementById("enviar").addEventListener("click", function(event){});
                 if (verificacion == null || verificacion == "") {
                     event.preventDefault();
                     return false;
