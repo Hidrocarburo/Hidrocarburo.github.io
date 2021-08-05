@@ -64,10 +64,20 @@
                     <input type="email" id="email" placeholder="Correo electrónico" required>
                     <input type="number" id="celular" placeholder="Celular" required>
                     <div class="g-recaptcha" id="captcha" data-sitekey="6LcxVOAbAAAAAHU5IA8nQXjCqCZtLumm6U2taEvc"></div>
-                    <input type="submit" value="Enviar" id="enviar">
+                    <input type="submit" value="Enviar" onclick="verificarCaptcha(e)" id="enviar">
                 </form>
             </div>
         </section>
+
+        <script>
+            function verificarCaptcha(e){
+                verificacion = grecaptcha.getResponse();
+                if (verificacion == null || verificacion == "") {
+                    e.preventDefault();
+                    return false;
+                }
+            }
+        </script>
 
         <!--Footer start-->
         <footer id="footer">
