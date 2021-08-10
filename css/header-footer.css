@@ -1,3 +1,50 @@
+#about-webpage{
+    background-color: var(--pcolor3);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#about-webpage h1{
+    text-align: center;
+    font-size: 200%;
+    margin: -50px 0 0 0;
+    padding-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    background-color: var(--pcolor3);
+    position: relative;
+    top: 2px;
+}
+
+#about-webpage .line {
+    display: block;
+    margin: 1px auto 2px auto;
+    padding: 0;
+    width: 30%;
+    height: 1px;
+    background-color: #444;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+#about-webpage p{
+    align-self: center;
+    margin: 0px 100px 0 100px;
+    padding: 10px;
+    font-size: 100%;
+    font-family: 'Playfair Display', serif;
+}
+
+#about-webpage #logo{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+
 #header{
     background-color:var(--pcolor3); 
     display: flex;
@@ -113,6 +160,43 @@
 }
 
 @media (max-width: 1000px){
+
+    #about-webpage{
+        background-color: var(--pcolor3);
+        height: 5vw;
+    }
+
+    #about-webpage #logo{
+        display: none;
+    }
+    
+    #about-webpage h1{
+        margin: -12vw 0 0 0;
+        padding-top: 1vw;
+        background-color: var(--pcolor3);
+        top: 0.5vw
+    }
+
+    #about-webpage .line {
+        display: block;
+        margin: 0 auto 0.5vw auto;
+        padding: 0;
+        width: 30%;
+        height: 0.1vw;
+        background-color: #444;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+      }
+    
+    #about-webpage p{
+        margin: 0;
+        padding: 0vw 0vw 3vw 0vw;
+        width: 100%;
+        text-align: center;
+        background-color: var(--pcolor3);
+    }
+
     #header{
         height: 10vw;
     }
@@ -164,7 +248,7 @@
         position: absolute;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 8vh);
+        grid-template-rows: repeat(3, 8vh);
         top: 10vw;
         right: 0vw;
         background-color: var(--pcolor3);

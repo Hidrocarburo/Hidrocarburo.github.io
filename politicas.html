@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="css/common.css">
@@ -6,34 +6,38 @@
         <link rel="stylesheet" href="css/header-footer.css">
         <link rel="icon" href="fotos/Logo_Pasteleria_MG.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Políticas de la empresa.">
         <title>Pastelería MG - Políticas</title>
+    </head>
+    <body>
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FF7E9J5XPB"></script>
-        <script>
+        <script async> 
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-FF7E9J5XPB');
         </script>
-    </head>
-    <body>
 
         <!--Header start-->
-        <header id="header">
+        <section id="about-webpage">
+            <img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png" alt="Pastelería MG">
+            <h1> Pastelería MG</h1>
+            <div class="line"></div>
+            <p>Pastelería dedicada a las tortas caseras, facturas, brownies, pastafrolas, y más.</p>
+        </section>
+        <header id="header" style="position: sticky">
             <input type="checkbox" id="checkmenu">
-            <img id="menu" src="fotos/header-footer/Menu.png">
+            <a href="index.html"><img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png" alt="Pastelería MG"></a>
+            <img id="menu" src="fotos/header-footer/Menu.svg" alt="Menu">
             <navbar>
                 <a id="inicio" href="index.html">Inicio</a>
                 <a id="establecimientos" href="establecimientos.html">Establecimientos</a>
                 <a id="contacto" href="contacto.html">Contacto</a>
-                <div class="subnav">
-                    <a id="productos" href="productos.html" class="subnav-btn">Productos</a>
-                    <div class="subnav-links">
-                        <a href="productos.html">Listado</a>
-                        <a href="#">Pastelería</a>
-                        <a href="#">Catering</a>
-                    </div>
-                </div>
             </navbar> 
         </header>
         <!--Header end-->
@@ -67,8 +71,8 @@
         <footer id="footer">
             <p id="copyright">Copyright © 2020 - 2021 Pastelería MG Company. Todos los derechos reservados.</p>
             <div id="socials">
-                <a href="#"><img src="fotos/header-footer/Facebook_logo.png" alt="Facebook"></a>
-                <a href="#"><img src="fotos/header-footer/Instagram_logo.png" alt="Instagram"></a>
+                <a href="#"><img src="fotos/header-footer/Facebook_logo.svg" alt="Facebook"></a>
+                <a href="#"><img src="fotos/header-footer/Instagram_logo.svg" alt="Instagram"></a>
             </div>
             <a id="politics" href="politicas.html">Políticas de servicio</a>
         </footer>

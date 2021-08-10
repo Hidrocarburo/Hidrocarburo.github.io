@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="css/common.css">
@@ -6,34 +6,38 @@
         <link rel="stylesheet" href="css/header-footer.css">
         <link rel="icon" href="fotos/Logo_Pasteleria_MG.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Establecimientos de la empresa.">
         <title>Pastelería MG - Establecimientos</title>
+    </head>
+    <body>
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FF7E9J5XPB"></script>
-        <script>
+        <script async>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-FF7E9J5XPB');
         </script>
-    </head>
-    <body>
 
         <!--Header start-->
-        <header id="header">
+        <section id="about-webpage">
+            <img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png" alt="Pastelería MG">
+            <h1> Pastelería MG</h1>
+            <div class="line"></div>
+            <p>Pastelería dedicada a las tortas caseras, facturas, brownies, pastafrolas, y más.</p>
+        </section>
+        <header id="header" style="position: sticky">
             <input type="checkbox" id="checkmenu">
-            <img id="menu" src="fotos/header-footer/Menu.png">
+            <a href="index.html"><img id="logo" src="fotos/header-footer/Logo_Pasteleria_MG.png" alt="Pastelería MG"></a>
+            <img id="menu" src="fotos/header-footer/Menu.svg" alt="Menu">
             <navbar>
                 <a id="inicio" href="index.html">Inicio</a>
                 <a id="establecimientos" href="establecimientos.html">Establecimientos</a>
                 <a id="contacto" href="contacto.html">Contacto</a>
-                <div class="subnav">
-                    <a id="productos" href="productos.html" class="subnav-btn">Productos</a>
-                    <div class="subnav-links">
-                        <a href="productos.html">Listado</a>
-                        <a href="#">Pastelería</a>
-                        <a href="#">Catering</a>
-                    </div>
-                </div>
             </navbar> 
         </header>
         <!--Header end-->
@@ -44,9 +48,9 @@
 
         <section class="location">
             <div class="location-info">
-                <p id="address"><img id="address-icon" src="fotos/establecimientos/address.png"><b> Av. Córdoba 3821, Buenos Aires</b></p>
-                <p id="calendar"><img id="calendar-icon" src="fotos/establecimientos/calendar.png"><b> Lunes a sábados</b></p>
-                <p id="schedule"><img id="schedule-icon" src="fotos/establecimientos/clock.png"><b> 08:00 a 13:00 / 16:00 a 20:00</b></p>
+                <p id="address"><span class="fi-rr-location-alt"><b> Av. Córdoba 3821, Buenos Aires</b></p>
+                <p id="calendar"><span class="fi-rr-calendar"><b> Lunes a sábados</b></p>
+                <p id="schedule"><span class="fi-rr-clock"><b> 08:00 a 13:00 / 16:00 a 20:00</b></p>
             </div>
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.8615379640225!2d-58.42085421605976!3d-34.59756787606249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7cdc7cefa5%3A0xef046ab7d8a446ad!2sAv.%20C%C3%B3rdoba%203821%2C%20C1188AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1628016957794!5m2!1ses-419!2sar" 
              allowfullscreen="" loading="lazy"></iframe>
@@ -58,8 +62,8 @@
         <footer id="footer">
             <p id="copyright">Copyright © 2020 - 2021 Pastelería MG Company. Todos los derechos reservados.</p>
             <div id="socials">
-                <a href="#"><img src="fotos/header-footer/Facebook_logo.png" alt="Facebook"></a>
-                <a href="#"><img src="fotos/header-footer/Instagram_logo.png" alt="Instagram"></a>
+                <a href="#"><img src="fotos/header-footer/Facebook_logo.svg" alt="Facebook"></a>
+                <a href="#"><img src="fotos/header-footer/Instagram_logo.svg" alt="Instagram"></a>
             </div>
             <a id="politics" href="politicas.html">Políticas de servicio</a>
         </footer>
