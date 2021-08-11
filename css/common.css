@@ -30,7 +30,7 @@ body{
 }
 
 @media (max-width: 1000px){
-    body{background-size: 500px 150px;}
+    body{overflow-x: hidden;}
 
     *{font-size: 2.5vw;}
 
