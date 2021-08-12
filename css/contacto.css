@@ -150,7 +150,7 @@
     }
 
     #survey-form{
-        height: 60vw;
+        height: 80vw;
         width: 90%;
         background-color: rgba(60,60,90,0.5);
         border-radius: 4vw;
@@ -191,7 +191,7 @@
     }
     
     #enviar{
-        margin-top: 5vw;
+        margin-top: 20vw;
         height: 5vw;
     }
 }
