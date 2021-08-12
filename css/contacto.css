@@ -51,7 +51,7 @@
 #survey-form{
     margin: 50px auto auto auto;
     width: 80%;
-    height: 500px;
+    height: 580px;
     background-color: rgba(60,60,90,0.5);
     border-radius: 40px;
 }
@@ -71,7 +71,7 @@
 #survey-container form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px 70px 70px 100px 70px;
+    grid-template-rows: 70px 70px 70px 180px 70px;
 }
 
 #whatsapp-chat p{
