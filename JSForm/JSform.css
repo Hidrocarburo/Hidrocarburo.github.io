@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+/* General style */
+body{
+    background-color: black;
+    background: url(./src/background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Epilogue', sans-serif;
+    color: white;
+    text-shadow: 0.15em 0.15em 0 black;
+}
+
+/* Main content (wrapper) */
+main{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+
+/* Form box style */
+main #form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgba(253, 146, 96, 0.2), rgba(253, 96, 151, 0.2));
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 0.2em solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    border-radius: 1em;
+}
+
+/* Form title */
+
+main #form-box h1{
+    margin: 0;
+    font-size: 150%;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Form buttons container */
+main #form-box #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60%;
+}
+
+/* input and button styling */
+main #form-box #form input, main #form-box #form button{
+    margin: auto;
+    width: 80%;
+    height: 15%;
+    font-size: 1em;
+    background-color: black;
+    color: #CCC;
+    border: transparent;
+    border-radius: 0.3em;
+}
+
+/* More button styling */
+main #form-box #form button{
+    background: linear-gradient(90deg, rgba(253, 146, 96, 0.8), rgba(253, 96, 151, 0.8));
+    border: 0.1em solid white;
+    color: black;
+}
+
+/* Labels styling (alerts for text fields) */
+main #form-box #form label{
+    font-size: 90%;
+    text-align: center;
+    color: rgb(255, 114, 114);
+    margin: 0.2em 0 1em 0;
+}
+
+/* Hiding labels until certain JS conditions are met */
+#text-label{
+    display: none;
+}
+
+#num-label{
+    display: none;
+}
+
+#mail-label{
+    display: none;
+}
+
+/* Media for mobile view */
+@media (max-width: 900px){
+    body{
+        font-size: 2vw;
+    }
+
+    main{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-columns: 1fr 6fr 1fr;
+        height: 100vh;
+    }
+
+    /* Media for tablet view */
+    @media (min-height: 600px){   
+
+        main{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-columns: 1fr 6fr 1fr;
+            height: 100vh;
+        }
+    }
+}
