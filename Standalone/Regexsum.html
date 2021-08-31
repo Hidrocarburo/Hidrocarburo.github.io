@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regex Sum</title>
+        <meta name="description" content="Sum numbers using Regex.">
+        <meta charset="UTF-8">
+        <meta name="author" content="Mateo Nores">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <script async defer>   
+            function sumNumbers(){
+                let regex = /\d+/g;
+                let numArray = document.getElementById("numbers-area").value.match(regex);
+                let numResult = numArray.reduce((total, num) => parseInt(total) + parseInt(num));
+                document.getElementById("sum-result").innerHTML = `
+                Números ingresados: ${numArray}. 
+                Resultado: ${numResult}
+                `;
+            }
+        </script>
+
+        <h1>Ingrese números a sumar</h1>
+        <textarea autofocus id="numbers-area">1 2 3</textarea>
+        <button onClick="sumNumbers()">Sumar</button>
+        <p id="sum-result"></p>
+
+    </body>
+</html>
