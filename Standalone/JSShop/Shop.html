@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tienda</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Shop example using JavaScript">
+        <meta name="author" content="Mateo Nores">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <link rel="stylesheet" href="Shop.css">
+        <script src="Shop.js" async defer></script>
+
+        <h1>Tienda JavaScript</h1>
+
+        <h2>Añadir producto</h2>
+        <form id="new_product" action="">
+            <input id="new_product_name" name="new_product" type="text" placeholder="Nombre del producto">
+            <label for="new_product_name"></label>
+
+            <input id="new_product_quantity" name="new_product" type="number" placeholder="Cantidad del producto">
+            <label for="new_product_quantity"></label>
+
+            <br>
+            <button type="button" onclick="addProduct(document.getElementById('new_product_name').value, document.getElementById('new_product_quantity').value)">Añadir</button>
+        </form>
+
+        <div id="available_product_list">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+.product_container{
+    border: 1px solid black;
+    margin: 10px 0 0px 0;
+    width: fit-content;
+}
+
+.product_container p{
+    margin: 5px 20px 10px 20px;
+}
+
+.product_container form{
+    margin: 5px 20px 10px 20px;
+}
