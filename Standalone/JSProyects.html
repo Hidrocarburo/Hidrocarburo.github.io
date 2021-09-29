@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreeCodeCamp JS Proyects</title>
+        <meta name="description" content="Proyects I made for the JS Certification on FreeCodeCamp page.">
+        <meta charset="UTF-8">
+        <meta name="author" content="Mateo Nores">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Proyectos JavaScript de FreeCodeCamp</h1>
+        <h2>¿Es palíndromo?</h2>
+        <form action="#"> 
+            <input id="palindrome_checker_input" type="text" placeholder="Ej: anita lava la tina">
+            <button type="submit" onclick="palindrome(document.getElementById('palindrome_checker_input').value)">Enviar</button>
+        </form>
+        <p id="palindrome_checker_output"></p>
+        <script src="JSProyects/palindrome-checker.js"></script>
+
+        <h2>Cifrado Caesar</h2>
+        <p>(TIP: Probá utilizando el resultado como input)</p>
+        <form action="#">
+            <input id="caesars_cipher_input" type="text" placeholder="Ej: CAFE (No utilizar tildes)">
+            <button type="submit" onclick="rot13(document.getElementById('caesars_cipher_input').value)">Enviar</button>
+        </form>
+        <p id="caesars_cipher_output"></p>
+        <script src="JSProyects/caesars-cipher.js"></script>
+
+        <h2>Convertir número a numeros romanos</h2>
+        <form action="#">
+            <input id="roman_numeral_converter_input" type="number" placeholder="Ej: 2534">
+            <button type="submit" onclick="convertToRoman(document.getElementById('roman_numeral_converter_input').value)">Enviar</button>
+        </form>
+        <p id="roman_numeral_converter_output"></p>
+        <script src="JSProyects/roman-numeral-converter.js"></script>
+
+        <h2>Validador de número de teléfono (USA)</h2>
+        <form action="#">
+            <input id="telephone_number_validator_input" type="text" placeholder="Ej: (555)555-5555">
+            <button type="submit" onclick="telephoneCheck(document.getElementById('telephone_number_validator_input').value)">Enviar</button>
+        </form>
+        <p id="telephone_number_validator_output"></p>
+        <script src="JSProyects/telephone-number-validator.js"></script>
+
+        <h2>Calculadora de vuelto</h2>
+        <form action="#">
+            <label for="cash_register_price_input">Precio de producto: </label>
+            <input id="cash_register_price_input" type="number" placeholder="Ej: 19.5">
+            <br>
+            <label for="cash_register_cash_input">Monto del pago: </label>
+            <input id="cash_register_cash_input" type="number" placeholder="Ej: 20">
+
+            <p>Valor de monedas de cambio en caja registradora (USD):</p>
+
+            <input id="cash_register_penny_input" type="number" placeholder="Ej: 1.01">
+            <label for="cash_register_penny_input">PENNY ($0.01): </label><br>
+            
+            <input id="cash_register_nickel_input" type="number" placeholder="Ej: 2.05">
+            <label for="cash_register_nickel_input">NICKEL ($0.05): </label><br>
+
+            <input id="cash_register_dime_input" type="number" placeholder="Ej: 3.1">
+            <label for="cash_register_dime_input">DIME ($0.1): </label><br>
+
+            <input id="cash_register_quarter_input" type="number" placeholder="Ej: 4.25">
+            <label for="cash_register_quarter_input">QUARTER ($0.25): </label><br>
+
+            <input id="cash_register_dollar_input" type="number" placeholder="Ej: 90">
+            <label for="cash_register_dollar_input">DOLLAR ($1): </label><br>
+
+            <input id="cash_register_five_dollars_input" type="number" placeholder="Ej: 55">
+            <label for="cash_register_five_dollars_input">FIVE DOLLARS ($5): </label><br>
+
+            <input id="cash_register_ten_dollars_input" type="number" placeholder="Ej: 20">
+            <label for="cash_register_ten_dollars_input">TEN DOLLARS ($10): </label><br>
+
+            <input id="cash_register_twenty_dollars_input" type="number" placeholder="Ej: 60">
+            <label for="cash_register_twenty_dollars_input">TWENTY DOLLARS ($20): </label><br>
+
+            <input id="cash_register_one-hundred_dollars_input" type="number" placeholder="Ej: 100">
+            <label for="cash_register_one-hundred_dollars_input">ONE-HUNDRED DOLLARS ($100): </label><br>
+
+            <button type="submit" onclick='checkCashRegister(
+                document.getElementById("cash_register_price_input").value,
+                document.getElementById("cash_register_cash_input").value,
+                [["PENNY", document.getElementById("cash_register_penny_input").value],
+                ["NICKEL", document.getElementById("cash_register_nickel_input").value],
+                ["DIME", document.getElementById("cash_register_dime_input").value],
+                ["QUARTER", document.getElementById("cash_register_quarter_input").value],
+                ["ONE", document.getElementById("cash_register_dollar_input").value],
+                ["FIVE", document.getElementById("cash_register_five_dollars_input").value],
+                ["TEN", document.getElementById("cash_register_ten_dollars_input").value],
+                ["TWENTY", document.getElementById("cash_register_twenty_dollars_input").value],
+                ["ONE HUNDRED", document.getElementById("cash_register_one-hundred_dollars_input").value]])'
+            >Enviar</button>
+
+        </form>
+        <p id="cash_register_output"></p>
+        <script src="JSProyects/cash-register.js"></script>
+
+    </body>
+</html>
