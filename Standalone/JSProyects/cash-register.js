@@ -1,9 +1,27 @@
 function checkCashRegister(price, cash, cid) {
 
-  if(price == ""){
-    document.getElementById("cash_register_output").innerHTML = "Debes especificar un precio y monto"
+  if((price == "") || (cash == "")){
+    document.getElementById("cash_register_output").innerHTML = "Debes especificar un precio y monto."
     return false;
   }
+
+  price = parseFloat(price);
+  cash = parseFloat(cash);
+
+  for (let i=0; i<cid.length; i++){
+    if (cid[i][1] == ""){
+      document.getElementById("cash_register_output").innerHTML = "Debes rellenar todos los campos."
+      return false;
+    }
+
+    cid[i][1] = parseFloat(cid[i][1]);
+
+    if((cid[i][1] < 0) || (cid[i][1] == "")){
+      cid[i][1] = 0;
+    }
+  }
+
+  console.log(cid);
 
   let change = cash - price;
   let cidCash = cid.reduce(getCidCash, 0);
@@ -15,8 +33,10 @@ function checkCashRegister(price, cash, cid) {
 
   cidCash = cidCash.toFixed(2);
   if (cidCash < change){
+    document.getElementById("cash_register_output").innerHTML = "Fondos insuficientes en caja, sin cambio."
     return {status: "INSUFFICIENT_FUNDS", change: []}
   } else if (cidCash == change){
+    document.getElementById("cash_register_output").innerHTML = "Cambio devuelto de manera exacta, cambio: "+cid;
     return {status: "CLOSED", change: cid}
   } else{
 
@@ -67,8 +87,10 @@ function checkCashRegister(price, cash, cid) {
     }
 
     if ((changeArr.length==0) || (change != 0)){
+      document.getElementById("cash_register_output").innerHTML = "Sin cambio."
       return {status: "INSUFFICIENT_FUNDS", change: []}
     }else{
+      document.getElementById("cash_register_output").innerHTML = "Cambio: "+changeArr;
       return {status: "OPEN", change: changeArr}
     }
   }
